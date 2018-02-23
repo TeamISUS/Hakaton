@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="TeamISUS" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Brza hrana</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap.min.css" rel="stylesheet">
@@ -20,149 +18,289 @@
   <body>
 
     <header>
-            <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
-                    <img src="./logo.jpg" width="27px" height="27px">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-              
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="zdrava_hrana.html" style="color: green">Zdrava hrana aa <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="nezdrava_hrana.html" style="color: green">Nezdrava hrana</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+      <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
+        <a href="index.html">
+          <img src="./logo.jpg" width="27px" height="27px">
+        </a>
+
+        <a class="nav-link" href="zdrava_hrana.html" 
+           style="color: green">
+            Zdrava hrana 
+          <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-link" href="nezdrava_hrana.html" style="color: green">
+          Nezdrava hrana
+        </a>
+
+      </nav>
     </header>
 
     <main role="main">
-
-      
-
       <div class="album text-muted">
         <div class="container">
-            <span><p></p></span>
-            <div class="row row-grid">
-                <div class="col-sm-2"></div>    
-                
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/brzaHrana/giros.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title" align="center">Giros</h4>
-                        <p>Giros je tradicionalno grčko jelo od mesa, pečeno na vertikalnom ražnju, obično se služi kao sendvič,
-                             sa paradajzom, lukom i caciki sosom, umotan u pita hleb. Pravi se od pilećeg ili svinjskog mesa.</p>
+          
+          <span><p></p></span>
+          
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>    
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/giros.jpg"
+                   alt="Card image cap"> 
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id01').style.display='block'"
+                        class="button">Giros</button>
+                <div id="id01" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Giros</h2>
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                            class="closeBtn">&times;</span>
                     </div>
-                </div>
-                
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/brzaHrana/hamburger.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title" align="center">Hamburger</h4>
-                        <p>Organizacija Fast Food Menu Price (FFMP) istraživala je šta se dešava s ljudskim telom nakon konzumiranja
-                             hamburgera od 509 kalorija i otkrila da tokom narednog sata organizam prolazi kroz nekoliko burnih etapa.</p>
+                    <div class="modal-body">
+                      <p>
+                        Giros je tradicionalno grčko jelo od mesa, pečeno na vertikalnom ražnju, obično se služi kao sendvič,
+                             sa paradajzom, lukom i caciki sosom, umotan u pita hleb. Pravi se od pilećeg ili svinjskog mesa.
+                      </p>
                     </div>
-                </div>
-                
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/brzaHrana/komplet-lepinja1.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title" align="center">Komplet lepinja</h4>
-                        <p>Komplet lepinja, jedan od najpoznatijih specijaliteta iz Užica, jeste veoma ukusno jelo, ali ne i zdravo.
-                             Punjeno punomasnim kajmakom, veoma je prezasićeno mastima.</p>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
+                  </div>
                 </div>
-                
-                <div class="col-sm-2"></div>    
+              </div>
             </div>
-            <span><p></p></span>
-            <div class="row row-grid">
-                    <div class="col-sm-2"></div>    
-                    
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/brzaHrana/palacinke.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Palačinke</h4>
-                            <p>Palačinke – testo i prelivi čine ovaj specijalitet ukusnim, ali i nezdravim. Veoma su kalorične, tako da doprinose gojaznosti,
-                                 ukoliko se unose često u ogromnim količinama.</p>
-                        </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/Hamburger.jpg">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id02').style.display='block'"
+                        class="button">Hamburger</button>
+                <div id="id02" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Hamburger</h2>
+                      <span onclick="document.getElementById('id02').style.display='none'"
+                            class="closeBtn">&times;</span>
                     </div>
+                    <div class="modal-body">
+                      <p> 
+                       Organizacija Fast Food Menu Price (FFMP) istraživala je šta se dešava s ljudskim telom nakon konzumiranja
+                             hamburgera od 509 kalorija i otkrila da tokom narednog sata organizam prolazi kroz nekoliko burnih etapa.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/komplet-lepinja1.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id03').style.display='block'"
+                        class="button">Komplet lepinja</button>
+                <div id="id03" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Komplet lepinja</h2>
+                      <span onclick="document.getElementById('id03').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Komplet lepinja, jedan od najpoznatijih specijaliteta iz Užica, jeste veoma ukusno jelo, ali ne i zdravo.
+                             Punjeno punomasnim kajmakom, veoma je prezasićeno mastima.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <span><p></p></span>
+          
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>              
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/palacinke.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id04').style.display='block'"
+                        class="button">Palačinke</button>
+                <div id="id04" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Palačinke</h2>
+                      <span onclick="document.getElementById('id04').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                     Palačinke – testo i prelivi čine ovaj specijalitet ukusnim, ali i nezdravim. Veoma su kalorične, tako da doprinose gojaznosti,
+                                 ukoliko se unose često u ogromnim količinama.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
                     
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/brzaHrana/pica.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Pizza</h4>
-                           <p>
-                                Pizza, jedno od najpopularnijih jela danas, ne predsavlja izvor zdravlja. Testo i prevelika kolicina ulja čine ovo jelo 
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/pica.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id05').style.display='block'"
+                        class="button">Pizza</button>
+                <div id="id05" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Pizza</h2>
+                      <span onclick="document.getElementById('id05').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                         Pizza, jedno od najpopularnijih jela danas, ne predsavlja izvor zdravlja. Testo i prevelika kolicina ulja čine ovo jelo 
                                 veoma kaloričnim.
-                           </p>
-                        </div>
+                      </p>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/brzaHrana/pohpiletina.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Pohovana piletina</h4>
-                            <p>Piletina jeste jedno od najzdravijih vrsta mesa, ali pohovana piletina, kao jedan od načina pripreme, nije preoručljiva.
-                                 Pohovana hrana je izuzetno masna i veoma loše utiče na krvne sudove. </p>
-                        </div>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
-                    
-                    <div class="col-sm-2"></div>    
-             </div>
-             <span><p></p></span>
-             <div class="row row-grid">
-                    <div class="col-sm-2"></div>    
-                    
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/brzaHrana/pohovanikackavalj.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Pohovani kačkavalj</h4>
-                            <p>
-                                    Pohovani kačkavalj je toplo predjelo koje se može servirati uz šta god želite. Nije zdrav i predsavalja visoko kalorični obrok. 
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/pohpiletina.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id06').style.display='block'"
+                        class="button">Pohovana piletina</button>
+                <div id="id06" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Pohovana piletina</h2>
+                      <span onclick="document.getElementById('id06').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Piletina jeste jedno od najzdravijih vrsta mesa, ali pohovana piletina, kao jedan od načina pripreme, nije preoručljiva.
+                                 Pohovana hrana je izuzetno masna i veoma loše utiče na krvne sudove.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </div>
+
+          <span><p></p></span>
+
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/pohovanikackavalj.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id07').style.display='block'"
+                        class="button">Pohovani kačkavalj</button>
+                <div id="id07" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>Pohovani kačkavalj</h4>
+                      <span onclick="document.getElementById('id07').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                           Pohovani kačkavalj je toplo predjelo koje se može servirati uz šta god želite. Nije zdrav i predsavalja visoko kalorični obrok. 
                                     Pohovana hrana je izuzetno masna i veoma loše utiče na krvne sudove. 
-                            </p>
-                        </div>
+                      </p>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/brzaHrana/pomfrit.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Pomfrit</h4>
-                            <p>
-                                    Ako jedete mnogo pomfrita, brzo pretvaranje skroba u šećer povećava proizvodnju insulina i vremenom organizam razvija
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/brzaHrana/pomfrit.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id08').style.display='block'"
+                        class="button">Pomfrit</button>
+                  <div id="id08" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4>Pomfrit</h4>
+                        <span onclick="document.getElementById('id08').style.display='none'" 
+                              class="closeBtn">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                         Ako jedete mnogo pomfrita, brzo pretvaranje skroba u šećer povećava proizvodnju insulina i vremenom organizam razvija
                                      otpornost na insulin, pa se povećava rizik od srčanih bolesti i dijabetesa. Tačno je da je deci potrebno mnogo ugljenih hidrata,
                                       ali umesto pomfrita, dajte im da jedu žitarice, jer se one mnogo sporije pretvaraju u energiju i
                                        proizvode umereniju količinu ugljenih hidrata u telu.
-                            </p>
-                        </div>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <h3></h3>
+                      </div>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/brzaHrana/sendvic.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Sendvič</h4>
-                            <p>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="col-sm-1"></div>
+              <div class="col-sm-2 card" style="width: 20rem;">
+                <img class="card-img-top" src="hrana/brzaHrana/sendvic.jpg" alt="Card image cap">
+                <div class="card-block" align="center">
+                  <button onclick="document.getElementById('id09').style.display='block'"
+                          class="button">Sendvič</button>
+                  <div id="id09" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4>Sendvič</h4>
+                        <span onclick="document.getElementById('id09').style.display='none'" 
+                              class="closeBtn">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                         
                                     Sendviči predstavljaju kombinaciju raznih namirnica. Najčešće sadrže povrće, meso i priloge poput pavlake, majoneza, kečapa...
-                            </p>
-                        </div>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <h3></h3>
+                      </div>
                     </div>
-                    
-                    <div class="col-sm-2"></div>    
-             </div>
-            <span><p></p></span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        
+          <span><p></p></span>
+        
         </div>
       </div>
-
     </main>
 
     <footer class="container">
@@ -174,15 +312,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="./jquery.min.js"><\/script>')</script>
-    <script src="./popper.min.js"></script>
-    <script src="./bootstrap.min.js"></script>
-    <script src="./holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
   </body>
 </html>
