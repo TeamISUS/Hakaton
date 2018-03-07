@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="TeamISUS" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
     <title>Grickalice</title>
@@ -20,125 +18,279 @@
   <body>
 
     <header>
-            <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
-                    <img src="./logo.jpg" width="27px" height="27px">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-              
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="zdrava_hrana.html" style="color: green">Zdrava hrana <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="nezdrava_hrana.html" style="color: green">Nezdrava hrana</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+      <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
+        <a href="index.html">
+          <img src="./logo.jpg" width="27px" height="27px">
+        </a>
+
+        <a class="nav-link" href="zdrava_hrana.html" 
+           style="color: green">
+            Zdrava hrana 
+          <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-link" href="nezdrava_hrana.html" style="color: green">
+          Nezdrava hrana
+        </a>
+
+      </nav>
     </header>
 
     <main role="main">
-
-      
-
       <div class="album text-muted">
         <div class="container">
-            <span><p></p></span>
-            <div class="row row-grid">
-                <div class="col-sm-2"></div>    
-                
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/grickalice/kokice.gif" alt="Card image cap">
-                    <div class="card-block">
-                            <h4 class="card-title" align="center">Kokice</h4>
-                        <p class="card-title" align="center">Pakovanje kokica srednje veličine sadrži 1.200 kalorija. Osim toga, sadrže 980 miligrama natrijuma i 60 grama zasićenih masti, što je dovoljno za tri dana. Čak i ako biste pojeli samo jedno srednje pakovanje kokica, opet biste uneli količinu masti dovoljnu za pola dana.</p>
+          
+          <span><p></p></span>
+          
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>    
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/kokice.gif"
+                   alt="Card image cap"> 
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id01').style.display='block'"
+                        class="button">Kokice</button>
+                <div id="id01" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Kokice</h2>
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                            class="closeBtn">&times;</span>
                     </div>
-                </div>
-                
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/grickalice/kikiriki.gif" alt="Card image cap">
-                    <div class="card-block">
-                            <h4 class="card-title" align="center">Kikiriki</h4>
-                        <p class="card-title" align="center">Kao i sve ostale mahunarke, kikiriki ima visoku razinu fitinske kiseline i lektina, koji mogu utjecati na probavu i zdravlje. Kikiriki tako može biti glavni krivac nadutosti, zatvora, probavnih smetnji, nakupljenih plinova pa čak i težih simptoma poput depresije, dekoncentracije, a sve zbog loše probave koja loše utječe na neurotransmitere u mozgu. I sve zbog toga što ljudi nisu svjesni da im se svi ti simptomi javljaju zbog kikirikija.</p>
+                    <div class="modal-body">
+                      <p>
+                       Pakovanje kokica srednje veličine sadrži 1.200 kalorija. Osim toga, sadrže 980 miligrama natrijuma i 60 grama zasićenih masti, što je dovoljno za tri dana. Čak i ako biste pojeli samo jedno srednje pakovanje kokica, opet biste uneli količinu masti dovoljnu za pola dana.
+                      </p>
                     </div>
-                </div>
-                
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/grickalice/cips.gif" alt="Card image cap">
-                    <div class="card-block">
-                            <h4 class="card-title" align="center">Čips</h4>
-                        <p class="card-title" align="center">S nutricionističkog gledišta, čips predstavlja pravu energetsku bombu. Razlog leži u činjenici što se ploške krumpira duboko prže u biljnom ulju upijajući velike količine masnoća. Pri tome dobar dio masnoća čine zasićene masne kiseline dokazano nepovoljnog učinka na zdravlje srca i krvnih žila. Dodatno, prženjem na visokim temperaturama kao nusprodukt u čipsu nastaje potencijalni karcinogen, akrilamid. Naravno, potreban je unos velikih količina čipsa i akrilamida da bi se ispoljio negativan učinak, no ako se u obzir uzmu djeca čije je tijelo osjetljivije i manje, a želja za čipsom velika, nije nerealno govoriti o štetnosti ove tvari.</p>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
+                  </div>
                 </div>
-                
-                <div class="col-sm-2"></div>    
+              </div>
             </div>
-            <span><p></p></span>
-            <div class="row row-grid">
-                    <div class="col-sm-2"></div>    
-                    
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/grickalice/smoki.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Dominantan ukus kikirikija i hrskavost učinili su ga hranom svih generacija, neizostavnim pratiocem na putovanjima, druženjima, sedeljkama. Međutim, kalorijska vriednost smokija je vrlo velika, 100 grama ima oko 500 kalorija, zbog čega je jasno da ih svi koji nastoje održati optimalnu telesnu težinu ili izgubiti kilograme trebaju izbegavati ili jesti prigodno. Smoki je bogat natrijem, što nije preporučljivo za djecu ni za odrasle, i generalno je nutritivno siromašan.</h4>
-                        </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/kikiriki.gif">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id02').style.display='block'"
+                        class="button">Kikiriki</button>
+                <div id="id02" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Kikiriki</h2>
+                      <span onclick="document.getElementById('id02').style.display='none'"
+                            class="closeBtn">&times;</span>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/grickalice/grisini.gif" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Napravljeni su od pšeničnog brašna, biljne masti, morske soli (37%), dekstrotze, regulatora kiselosti. Njihova energetska vrednost za 100g iznosi 1513kJ/362kcal, od čega masti čine 6.4g, zasićene masne kiseline 2,9g, ugljeni hidrati 64,5g i šećeri 1,5g</h4>
-                        </div>
+                    <div class="modal-body">
+                      <p> 
+                      Kao i sve ostale mahunarke, kikiriki ima visoku razinu fitinske kiseline i lektina, koji mogu utjecati na probavu i zdravlje. Kikiriki tako može biti glavni krivac nadutosti, zatvora, probavnih smetnji, nakupljenih plinova pa čak i težih simptoma poput depresije, dekoncentracije, a sve zbog loše probave koja loše utječe na neurotransmitere u mozgu. I sve zbog toga što ljudi nisu svjesni da im se svi ti simptomi javljaju zbog kikirikija.
+                      </p>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/grickalice/clipsy.gif" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Jako je ukusan i primamljiv ali nažalost 100g clipsy-ja sadrži čak 15,7g zasićenih masnih kiselina, 56,2g ugljenih hidrata i 1,5g šećera.</h4>
-                        </div>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
-                    
-                    <div class="col-sm-2"></div>    
-             </div>
-             <span><p></p></span>
-             <div class="row row-grid">
-                    <div class="col-sm-2"></div>    
-                    
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/grickalice/ribice.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Još! drži prvu poziciju među slanim ribicama sa 38,7% i u miks segmentu sa 49,8% količinskog tržišnog učešća. Mogu se naći u pakovanjima od  90g i 180g, nažalost sadrže emulgatore, veštačke boje i izazivaju gojaznost.</h4>
-                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/cips.gif" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id03').style.display='block'"
+                        class="button">Čips</button>
+                <div id="id03" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Čips</h2>
+                      <span onclick="document.getElementById('id03').style.display='none'" 
+                            class="closeBtn">&times;</span>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/grickalice/Trik.gif" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Kao što proizvodi koji sadrže manje šećera nisu najzdravija opcija, tako i slane perece oslobođene masti često nisu bolje od, recimo, čipsa. Naime, prave se od belog brašna koje se u krvotoku pretvara u šećer i tako povećava krvni pritisak. Veoma su siromašne vlaknima i proteinima pa pre nego što sami završite tu kesu pereca, savetujemo vam da razmislite da li su potreba ili samo hir.</h4>
-                        </div>
+                    <div class="modal-body">
+                      <p>
+                        S nutricionističkog gledišta, čips predstavlja pravu energetsku bombu. Razlog leži u činjenici što se ploške krumpira duboko prže u biljnom ulju upijajući velike količine masnoća. Pri tome dobar dio masnoća čine zasićene masne kiseline dokazano nepovoljnog učinka na zdravlje srca i krvnih žila. Dodatno, prženjem na visokim temperaturama kao nusprodukt u čipsu nastaje potencijalni karcinogen, akrilamid. Naravno, potreban je unos velikih količina čipsa i akrilamida da bi se ispoljio negativan učinak, no ako se u obzir uzmu djeca čije je tijelo osjetljivije i manje, a želja za čipsom velika, nije nerealno govoriti o štetnosti ove tvari.
+                      </p>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/grickalice/tuc.png" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Sadrži gluten, jaja, sumpor dioksid/sulfit, može da sadrži mleko i susam. Za 100 g njegova energetska vrednost je 2050kJ/490lcal, od čega masti čine 23g, a šećeri 7,2g.</h4>
-                        </div>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <span><p></p></span>
+          
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>              
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/smoki.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id04').style.display='block'"
+                        class="button">Smoki</button>
+                <div id="id04" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Smoki</h2>
+                      <span onclick="document.getElementById('id04').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                     Dominantan ukus kikirikija i hrskavost učinili su ga hranom svih generacija, neizostavnim pratiocem na putovanjima, druženjima, sedeljkama. Međutim, kalorijska vriednost smokija je vrlo velika, 100 grama ima oko 500 kalorija, zbog čega je jasno da ih svi koji nastoje održati optimalnu telesnu težinu ili izgubiti kilograme trebaju izbegavati ili jesti prigodno. Smoki je bogat natrijem, što nije preporučljivo za djecu ni za odrasle, i generalno je nutritivno siromašan.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
                     
-                    <div class="col-sm-2"></div>    
-             </div>
-            <span><p></p></span>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/grisini.gif" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id05').style.display='block'"
+                        class="button">Grisini</button>
+                <div id="id05" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Grisini</h2>
+                      <span onclick="document.getElementById('id05').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                         Napravljeni su od pšeničnog brašna, biljne masti, morske soli (37%), dekstrotze, regulatora kiselosti. Njihova energetska vrednost za 100g iznosi 1513kJ/362kcal, od čega masti čine 6.4g, zasićene masne kiseline 2,9g, ugljeni hidrati 64,5g i šećeri 1,5g
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/clipsy.gif" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id06').style.display='block'"
+                        class="button">Clipsy</button>
+                <div id="id06" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Clipsy</h2>
+                      <span onclick="document.getElementById('id06').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Jako je ukusan i primamljiv ali nažalost 100g clipsy-ja sadrži čak 15,7g zasićenih masnih kiselina, 56,2g ugljenih hidrata i 1,5g šećera.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </div>
+
+          <span><p></p></span>
+
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/ribice.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id07').style.display='block'"
+                        class="button">Ribice</button>
+                <div id="id07" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>Ribice</h4>
+                      <span onclick="document.getElementById('id07').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                         Još! drži prvu poziciju među slanim ribicama sa 38,7% i u miks segmentu sa 49,8% količinskog tržišnog učešća. Mogu se naći u pakovanjima od  90g i 180g, nažalost sadrže emulgatore, veštačke boje i izazivaju gojaznost.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/grickalice/Trik.gif" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id08').style.display='block'"
+                        class="button">Perece</button>
+                  <div id="id08" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4>Perece</h4>
+                        <span onclick="document.getElementById('id08').style.display='none'" 
+                              class="closeBtn">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                        Kao što proizvodi koji sadrže manje šećera nisu najzdravija opcija, tako i slane perece oslobođene masti često nisu bolje od, recimo, čipsa. Naime, prave se od belog brašna koje se u krvotoku pretvara u šećer i tako povećava krvni pritisak. Veoma su siromašne vlaknima i proteinima pa pre nego što sami završite tu kesu pereca, savetujemo vam da razmislite da li su potreba ili samo hir.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <h3></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="col-sm-1"></div>
+              <div class="col-sm-2 card" style="width: 20rem;">
+                <img class="card-img-top" src="hrana/grickalice/tuc.png" alt="Card image cap">
+                <div class="card-block" align="center">
+                  <button onclick="document.getElementById('id09').style.display='block'"
+                          class="button">Krekeri</button>
+                  <div id="id09" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4>Krekeri</h4>
+                        <span onclick="document.getElementById('id09').style.display='none'" 
+                              class="closeBtn">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                         
+                         Sadrži gluten, jaja, sumpor dioksid/sulfit, može da sadrži mleko i susam. Za 100 g njegova energetska vrednost je 2050kJ/490lcal, od čega masti čine 23g, a šećeri 7,2g.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <h3></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        
+          <span><p></p></span>
+        
         </div>
       </div>
-
     </main>
 
     <footer class="container">
@@ -150,15 +302,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="./jquery.min.js"><\/script>')</script>
-    <script src="./popper.min.js"></script>
-    <script src="./bootstrap.min.js"></script>
-    <script src="./holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
   </body>
 </html>
