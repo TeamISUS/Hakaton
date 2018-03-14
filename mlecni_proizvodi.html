@@ -2,160 +2,298 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <meta name="TeamISUS" content="">
 
-    <title>Album example for Bootstrap</title>
+    <title>Mlečni proizvodi</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
     <link href="dadada.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
-            <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
-                    <img src="./logo.jpg" width="27px" height="27px">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-              
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="zdrava_hrana.html" style="color: green">Zdrava hrana <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="nezdrava_hrana.html" style="color: green">Nezdrava hrana</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+      <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
+        <a href="index.html">
+          <img src="./logo.jpg" width="27px" height="27px">
+        </a>
+
+        <a class="nav-link" href="zdrava_hrana.html" 
+           style="color: green">
+            Zdrava hrana 
+          <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-link" href="nezdrava_hrana.html" style="color: green">
+          Nezdrava hrana
+        </a>
+
+      </nav>
     </header>
 
     <main role="main">
-
-      
-
       <div class="album text-muted">
         <div class="container">
-            <span><p></p></span>
-            <div class="row row-grid">
-                <div class="col-sm-2"></div>    
-                
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/mlecniProizvodi/jogurt.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title" align="center">Jogurt</h4>
-                        
-                    </div>
-                </div>
-                
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/mlecniProizvodi/kackavalj.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title" align="center">Kačkavalj</h4>
-                        
-                    </div>
-                </div>
-                
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 card" style="width: 20rem;">
-                    <img class="card-img-top" src="hrana/mlecniProizvodi/kajmak.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title" align="center">Kajmak</h4>
-                        <p>U srpskoj kuhinji kajmak se upotrebljava na mnogo načina – kao predjelo, kao jednostavan prilog
-                             uz tradicionalna jela, ćevape, meso sa roštilja, palentu, proju, ali i kao neizostavan sastojak
-                              gurmanskih specijaliteta – Karađorđevu šniclu ili komplet lepinje.</p>
-                    </div>
-                </div>
-                
-                <div class="col-sm-2"></div>    
+          
+          <span>
+            <p></p>
+          </span>
+
+          <div class="row row-grid">
+
+            <div class="col-sm-2">
+              <p></p>
             </div>
-            <span><p></p></span>
-            <div class="row row-grid">
-                    <div class="col-sm-2"></div>    
-                    
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/mlecniProizvodi/kiselapavlaka.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Kisela pavlaka</h4>
-                            <p>Kisela pavlaka je veoma koristan kiselo-mlečan proizvod. Ona ima manje belančevina od mleka,
-                                 više masti i vitamina rastvorljivih u mastima. To je proizvod u kome se sadrži mnogo kalcijuma, vitamina A i vitamina D
-                                 i značajna količina mikroelemenata, mineralnih soli, korisnih za ljudski organizam. </p>
-                        </div>
+                
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/jogurt.jpg"
+                   alt="Card image cap"> 
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id01').style.display='block'"
+                        class="button">Jogurt</button>
+                <div id="id01" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Jogurt</h2>
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                            class="closeBtn">&times;</span>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/mlecniProizvodi/mleko.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Mleko</h4>
-                           <p>Samo jedna šolja mleka obezbeđuje 30% dnevnih potreba kalcijuma, 
-                               minerala koji izgrađuje i održava kosti i zube jakima. </p>
-                        </div>
+                    <div class="modal-body">
+                      <p>
+                        Jogurt sadrži zdrave bakterije "Lactobacillus acidophilus" i 
+                        "Streptococcus thermophillus" koje suzbijaju štetne bakterije, 
+                        što je veoma dobro za regulisanje crevne flore, kao i protiv 
+                        mnogih infekcija. Dokazano je da ima antibiotsko dejstvo, jača 
+                        imuni sistem i čuva vitalnost organizma.
+                      </p>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/mlecniProizvodi/cokmleko.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Čokoladno mleko</h4>
-                            <p>Čokoladno mleko je veoma ukusan dezert koji će zadovoljiti vašu potrebu za slatkim,
-                                 a neće uticati na liniju, posebno ako odaberete neku zamenu za klasično kravlje mleko. </p>
-                        </div>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
-                    
-                    <div class="col-sm-2"></div>    
-             </div>
-             <span><p></p></span>
-             <div class="row row-grid">
-                    <div class="col-sm-2"></div>    
-                    
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/mlecniProizvodi/pavlakazakuvanje.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Pavlaka za kuvanje</h4>
-                            <p>
-                                    Pavlaka za kuvanje je proizvod koji se danas koristi u svakoj kuhinji i koji jednostavno jelo 
-                                    pretvara u poseban i neodoljiv specijalitet.
-                            </p>
-                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/mleko.jpg">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id02').style.display='block'"
+                        class="button">Mleko</button>
+                <div id="id02" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Mleko</h2>
+                      <span onclick="document.getElementById('id02').style.display='none'"
+                            class="closeBtn">&times;</span>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/mlecniProizvodi/sir.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Sir</h4>
-                            <p>Sir sadrži cink koji je dobar za kožu i štiti je od starenja. 
-                                Takođe je dobar i za oči koje će sačuvati od mnogih bolesti.</p>
-                        </div>
+                    <div class="modal-body">
+                      <p> 
+                        Samo jedna šolja mleka obezbeđuje 30% dnevnih potreba kalcijuma, 
+                        minerala koji izgrađuje i održava kosti i zube jakima.
+                      </p>
                     </div>
-                    
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" style="width: 20rem;">
-                        <img class="card-img-top" src="hrana/mlecniProizvodi/vocnijogurt.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title" align="center">Voćni jogurt</h4>
-                            <p>Voćni jogurti su bogati šećerom, odakle dolazi većina njihove kaloričnosti,
-                                 a često sadrže i razne dodatke poput bojila, aroma ili umetnih sladila.</p>
-                        </div>
+                    <div class="modal-footer">
+                      <h3></h3>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/vocnijogurt.jpg"
+                   alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id03').style.display='block'"
+                        class="button">Voćni jogurt</button>
+                <div id="id03" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Voćni jogurt</h2>
+                      <span onclick="document.getElementById('id03').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Voćni jogurti su bogati šećerom, odakle dolazi većina njihove
+                        kaloričnosti, a često sadrže i razne dodatke poput bojila, aroma 
+                        ili umetnih sladila.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <span><p></p></span>
+          
+          <div class="row row-grid">
+            <div class="col-sm-2"></div>              
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/pavlakazakuvanje.jpg" 
+                   alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id04').style.display='block'"
+                        class="button">Pavlaka za kuvanje</button>
+                <div id="id04" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Pavlaka za kuvanje</h2>
+                      <span onclick="document.getElementById('id04').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Kisela pavlaka je veoma koristan kiselo-mlečan proizvod. Ona ima
+                        manje belančevina od mleka, više masti i vitamina rastvorljivih u 
+                        mastima. To je proizvod u kome se sadrži mnogo kalcijuma, vitamina
+                        A i vitamina D i značajna količina mikroelemenata, mineralnih soli,
+                        korisnih za ljudski organizam.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
                     
-                    <div class="col-sm-2"></div>    
-             </div>
-            <span><p></p></span>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/cokmleko.jpg" 
+                   alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id05').style.display='block'"
+                        class="button">Čokoladno mleko</button>
+                <div id="id05" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Čokoladno mleko</h2>
+                      <span onclick="document.getElementById('id05').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Čokoladno mleko je veoma ukusan dezert koji će zadovoljiti vašu 
+                        potrebu za slatkim, a neće uticati na liniju, posebno ako 
+                        odaberete neku zamenu za klasično kravlje mleko. 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/kiselapavlaka.jpg" 
+                   alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id06').style.display='block'"
+                        class="button">Kisela pavlaka</button>
+                <div id="id06" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Kisela pavlaka</h2>
+                      <span onclick="document.getElementById('id06').style.display='none'" 
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Kisela pavlaka je veoma koristan kiselo-mlečan proizvod. Ona ima
+                        manje belančevina od mleka, više masti i vitamina rastvorljivih u 
+                        mastima. To je proizvod u kome se sadrži mnogo kalcijuma, vitamina
+                        A i vitamina D i značajna količina mikroelemenata, mineralnih soli,
+                        korisnih za ljudski organizam.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </div>
+
+          <span><p></p></span>
+
+          <div class="row row-grid">
+            <div class="col-sm-3"></div>              
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/sir.jpg" 
+                   alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id04').style.display='block'"
+                        class="button">Kajmak</button>
+                <div id="id04" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Kajmak</h2>
+                      <span onclick="document.getElementById('id04').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Sir sadrži cink koji je dobar za kožu i štiti je od starenja. 
+                        Takođe je dobar i za oči koje će sačuvati od mnogih bolesti.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                    
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 card" style="width: 20rem;">
+              <img class="card-img-top" src="hrana/mlecniProizvodi/kajmak.jpg" alt="Card image cap">
+              <div class="card-block" align="center">
+                <button onclick="document.getElementById('id05').style.display='block'"
+                        class="button">Kajmak</button>
+                <div id="id05" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Kajmak</h2>
+                      <span onclick="document.getElementById('id05').style.display='none'"
+                            class="closeBtn">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        U srpskoj kuhinji kajmak se upotrebljava na mnogo načina – kao 
+                        predjelo, kao jednostavan prilog uz tradicionalna jela, ćevape,
+                        meso sa roštilja, palentu, proju, ali i kao neizostavan sastojak
+                        gurmanskih specijaliteta – Karađorđevu šniclu ili komplet lepinje.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <span><p></p></span>
+        
         </div>
       </div>
-
     </main>
 
     <footer class="container">
@@ -167,15 +305,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="./jquery.min.js"><\/script>')</script>
-    <script src="./popper.min.js"></script>
-    <script src="./bootstrap.min.js"></script>
-    <script src="./holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
   </body>
 </html>
